@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project of js</title>
+    <style>
+        body,html
+        {
+           margin: 0;
+           padding: 0;
+           height: 100%;
+           background-color: lightblue;
+        }
+        .container
+        {
+           
+            width: 320px;
+            /* background-color: aqua; */
+            display: flex;
+            flex-wrap: wrap;
+            gap:5px;
+        }
+        .box
+        {
+            border:black solid 2px;
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            display: flex;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: green;
+            background-color: white;
+        }
+        .main
+        {
+            height: 100%;    /*<!-- vh sometimes you can use instead of %-->*/
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+            flex-direction: column;
+        }
+        .hide
+        {
+            visibility: hidden;
+        }
+        .btn
+        {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .new
+        {
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="msg-container hide">
+        <center><h1 class="congo">Congratulation</h1></center>
+    </div>
+       <center><h3>TIC TOI TOE</h3></center>
+       <center><button class="new">New Game</button></center>
+    <div class="main">
+    <div class="container">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+    </div>
+    <button style="margin: 100px;"class="btn">Reset Game</button>
+</div>
+<script src = "mini_project.js"></script>
+</body>
+</html>
